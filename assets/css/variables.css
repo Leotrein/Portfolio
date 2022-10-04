@@ -1,0 +1,8 @@
+:root {
+	/* creating global var */
+	--black-color: #000;
+	--white-color: #fff;
+	--grey-color: #eee;
+	--hover-color: #474747;
+	--gap: 3rem;
+}

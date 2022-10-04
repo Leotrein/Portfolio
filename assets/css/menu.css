@@ -1,0 +1,48 @@
+.menu {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.menu-adjust {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.1rem solid var(--grey-color);
+}
+.menu h1 {
+	font-size: 2.3rem;
+}
+.menu ul {
+	display: flex;
+	list-style: none;
+}
+.menu a {
+	text-decoration: none;
+	color: var(--black-color);
+}
+.menu ul li a {
+	display: block;
+	font-size: 1.6rem;
+	padding: 2rem;
+	position: relative;
+}
+
+/* animation */
+
+.menu ul li a::after {
+	content: "";
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	width: 0;
+	height: 0.2rem;
+	background-color: var(--hover-color);
+	transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after {
+	width: 50%;
+	left: 25%;
+}
