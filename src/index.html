@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/assets/css/elements.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/top3.css">
+    <link rel="stylesheet" href="/assets/css/sections.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
         rel="stylesheet">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/x-icon" />
 </head>
 
 <body>
@@ -31,13 +31,13 @@
     <!-- menu -->
     <aside class="menu white-bg">
         <div class="main-content menu-adjust">
-            <h1 class="logo"><a href="#">Logo</a></h1>
+            <a href="#home"><img class="logo" src="/assets/img/logo.png" alt="logo"></a>
 
             <nav>
                 <ul>
-                    <li><a href="#home">home</a></li>
+                    <li><a href="#intro">intro</a></li>
                     <li><a href="#top3">top3</a></li>
-                    <li><a href="#">gallery</a></li>
+                    <li><a href="#tech">technologies</a></li>
                     <li><a href="#">work</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
@@ -57,14 +57,14 @@
                     of Flash support from Firefox.</p>
             </div>
             <div class="home-img">
-                <img src="assets/img/web.svg" alt="html and css">
+                <img src="/assets/img/web.svg" alt="html and css">
             </div>
         </div>
     </section>
 
     <!-- top3 section -->
-    <section id="top3" class="white-bg section">
-        <div class="top3 main-content section">
+    <section id="intro" class="sub-bg section">
+        <div class="intro-top3 main-content">
             <h2>top 3 jobs</h2>
             <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
                 some surprises at the machine's performance. This post details some background information on the
@@ -77,6 +77,42 @@
                 overview of various other improvements that are in the pipeline.</p>
         </div>
     </section>
+
+    <!-- top3 section (other) -->
+    <section id="top3" class="grid-top3 main-bg section">
+        <div class="grid-top3-content main-content">
+            <div class="grid-top3-adjust">
+                <div class="grid-top3-text">
+                    <h2>Top 3 jobs</h2>
+                    <p>Here are some recent work.</p>
+                </div>
+                <div class="grid-top3-main">
+                    <article>
+                        <h3>First</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus illo magnam molestiae
+                            exercitationem veniam dolorum, ducimus earum provident corrupti vel nostrum deserunt eius
+                            voluptatum ea temporibus incidunt beatae, eos voluptates.</p>
+                    </article>
+                    <article>
+                        <h3>Another</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse optio velit ab
+                            nesciunt cumque ducimus dolor possimus, perspiciatis nulla veniam repellat alias totam enim
+                            aspernatur impedit fuga in unde?</p>
+                    </article>
+                    <article>
+                        <h3>Third one</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur adipisci
+                            inventore perspiciatis vel dolor repellat sequi fugiat voluptatem ullam quaerat nemo
+                            molestias necessitatibus! Adipisci esse nulla aspernatur beatae laborum!</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- technologies -->
+        <section class="white-bg section">
+
+        </section>
 
 </body>
 
