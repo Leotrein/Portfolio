@@ -20,6 +20,7 @@
 	grid: 1fr 1fr / 1fr 1fr 1fr 1fr;
 	justify-content: center;
 	gap: 5rem var(--gap);
+	max-width: 80%;
 }
 .img-title {
 	text-align: center;
@@ -28,8 +29,8 @@
 		"Lucida Sans", Arial, sans-serif;
 }
 .icons {
-	max-width: 20rem;
-	max-height: 25rem;
+	width: 17rem;
+	height: 22rem;
 	padding: var(--gap);
 
 	/* blur */
