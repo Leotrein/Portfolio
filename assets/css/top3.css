@@ -1,0 +1,46 @@
+/* top3 intro */
+.intro-top3 {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	max-width: 75rem;
+	min-height: 100vh;
+}
+
+/* top3 section */
+.grid-content {
+	display: flex;
+	min-height: 100vh;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+.grid-text > p {
+	font-style: italic;
+	margin-bottom: 8rem;
+}
+.grid-main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: var(--gap);
+	counter-reset: grid-counter;
+}
+.grid-top3 h3 {
+	font-size: 3rem;
+	position: relative;
+	padding-left: 5rem;
+	margin-bottom: 2.4rem;
+}
+
+/* number definition  */
+.grid-top3 h3::before {
+	counter-increment: grid-counter;
+	content: counter(grid-counter);
+	position: absolute;
+	font-size: 7rem;
+	font-style: italic;
+	top: -3rem;
+	left: -1rem;
+	transform: rotate(5deg);
+}
