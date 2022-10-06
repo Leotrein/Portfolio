@@ -1,0 +1,105 @@
+/* responsive */
+@media (max-width: 935px) {
+	.home-content {
+		grid-template-columns: 1fr;
+		max-width: 75rem;
+		gap: var(--gap);
+	}
+	.home-img {
+		margin-left: -5rem;
+	}
+	#contact .home-img {
+		width: 0;
+	}
+}
+@media (max-width: 845px) {
+	.tech-icons {
+		grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+	}
+}
+@media (max-width: 815px) {
+	.form-name {
+		grid-template-columns: 1fr;
+		gap: var(--gap);
+	}
+	.grid-main {
+		grid-template-columns: 1fr;
+		row-gap: 5.2rem;
+	}
+}
+@media (max-width: 500px) {
+	.icons {
+		width: 13rem;
+		height: 16.5rem;
+	}
+	.img-title {
+		font-size: 1.4rem;
+	}
+	.tech-text {
+		max-width: 75rem;
+	}
+}
+@media (max-width: 370px) {
+	.icons {
+		padding: 2rem;
+		width: 9.6rem;
+		height: 12.4rem;
+	}
+	/* need to fix the form that is not getting spacing on the right */
+}
+
+/* responsive menu for mobile */
+.close-menu {
+	display: none;
+}
+
+@media (max-width: 640px) {
+	.menu {
+		bottom: 0;
+		text-align: center;
+	}
+	.menu-content ul,
+	.menu-content {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.menu-content {
+		height: 100vh;
+	}
+	.menu {
+		display: none;
+	}
+	.close-menu {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+	}
+	.close-menu-label::after {
+		content: "☰";
+		position: fixed;
+		z-index: 2;
+		top: 2rem;
+		right: 2rem;
+		background-color: var(--background-color);
+		color: var(--white-color);
+		border-radius: 50%;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		width: 3rem;
+		height: 3rem;
+		text-align: center;
+		padding: 0.5rem;
+		cursor: pointer;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.close-menu:checked ~ .menu {
+		display: block;
+	}
+	.close-menu:checked ~ .close-menu-label::after {
+		content: "\00D7";
+	}
+}

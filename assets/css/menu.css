@@ -7,7 +7,7 @@
 	right: 0;
 	z-index: 1;
 }
-.menu-adjust {
+.menu-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
