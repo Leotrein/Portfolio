@@ -7,6 +7,26 @@
 	--hover-color: #474747;
 	--gap: 3rem;
 }
+@media (max-width: 815px) {
+	div .form-name {
+		grid-template-columns: 1fr;
+		gap: var(--gap);
+	}
+	div .grid-main {
+		grid-template-columns: 1fr;
+		row-gap: 4rem;
+	}
+}
+@media (max-width: 935px) {
+	section .home-content {
+		grid-template-columns: 1fr;
+		max-width: 75rem;
+		gap: var(--gap);
+	}
+	div .home-img {
+		margin: 0 0 -0 -5rem;
+	}
+}
 
 /* general */
 * {
@@ -62,14 +82,18 @@ h6 {
 	background-size: cover;
 	color: var(--white-color);
 }
-.white-bg {
-	background-color: #fff;
-	color: var(--black-color);
-}
 .sub-bg {
 	background-image: url("/assets/img/sub-bg.svg");
 	background-position: center center;
 	background-size: cover;
+	color: var(--black-color);
+}
+.black-bg {
+	background-color: #131313;
+	color: var(--white-color);
+}
+.white-bg {
+	background-color: #fff;
 	color: var(--black-color);
 }
 
