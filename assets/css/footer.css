@@ -47,6 +47,9 @@
 	flex-grow: 1 1 100%;
 	font-size: 3rem;
 }
+.form-group textarea {
+	resize: none;
+}
 .form-group button {
 	font-size: 3rem;
 	width: 100%;
